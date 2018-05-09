@@ -3,11 +3,8 @@ python:
   - "3.6"
 install:
   - npm install --save-dev coffeescript
-  - npm install --save-dev scss
-  - ls node_modules/scss/src
-  - ls node_modules/scss/specs
-  - cat package.json
   - gem install haml
+  - gem install scss
   - pip install configparser
   - chmod u=rwx build.sh
 script:
