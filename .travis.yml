@@ -1,8 +1,11 @@
-language: generic
+language: python
+python:
+  - "3.6"
 install:
   - npm install --save-dev coffeescript
   - npm install --save-dev sass
   - gem install haml
+  - pip install configparser
   - chmod u=rwx build.sh
 script:
   - ./build.sh -a
