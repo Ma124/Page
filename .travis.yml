@@ -6,11 +6,11 @@ install:
   - gem install haml
   - gem install sass
   - pip install configparser
+  - mkdir out
   - chmod u=rwx build.sh
 script:
   - ./build.sh -a
 after_success:
-  - mkdir out
   - cd out
   - ls
 
