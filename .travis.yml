@@ -1,6 +1,11 @@
 language: generic
-install: chmod u=rwx build.sh
-script: ./build.sh -a
+install:
+  - npm install --save-dev coffeescript
+  - npm install --save-dev sass
+  - gem install haml
+  - chmod u=rwx build.sh
+script:
+  - ./build.sh -a
 after_success:
   - mkdir out
   - cd out
