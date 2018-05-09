@@ -1,10 +1,8 @@
 language: generic
-install: true
+install: chmod u=rwx build.sh
 script: ./build.sh -a
 after_success:
   - mkdir out
-  - chmod u=rwx build.sh
-  - ./build
   - cd out
   - ls
 
