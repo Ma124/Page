@@ -3,7 +3,7 @@ python:
   - "3.6"
 install:
   - npm install --save-dev coffeescript
-  - npm install --save-dev sass
+  - npm install --save-dev scss
   - gem install haml
   - pip install configparser
   - chmod u=rwx build.sh
