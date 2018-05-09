@@ -13,7 +13,7 @@ def call(l):
 
 
 def comp_scss(inp, out):
-    call([r'scss', inp, out])
+    call([r'sass', '-scss', inp, out])
 
 
 def comp_coffee(inp, out):
