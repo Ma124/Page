@@ -3,8 +3,6 @@ install:
   - npm install --save-dev coffeescript
   - npm install --save-dev sass
   - gem install haml
-  - haml --help
-  - pip install configparser
   - chmod u=rwx build.sh
 script:
   - ./build.sh -a
