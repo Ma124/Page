@@ -13,15 +13,15 @@ def call(l):
 
 
 def comp_scss(inp, out):
-    call([r'D:\Programs\Ruby24-x64\bin\scss.bat', inp, out])
+    call([r'scss', inp, out])
 
 
 def comp_coffee(inp, out):
-    call([r'C:\Users\Ma_12\AppData\Roaming\npm\coffee.cmd', '-o', out, inp])
+    call([r'coffee', '-o', out, inp])
 
 
 def comp_haml(inp, out):
-    call([r'D:\Programs\Python-3.6\python.exe', 'D:\Data\Programming\Web\BeSafe\haml.py', '-i', args.src_haml + ';' + args.out_haml, inp, out])
+    call([r'python', 'haml.py', '-i', args.src_haml + ';' + args.out_haml, inp, out])
 
 
 def get_name(p):
@@ -97,7 +97,7 @@ if args.file is not None:
         if f.endswith('.haml'):
             if get_name(f).startswith('_'):
                 args.haml = True
-            comp_haml(f, args.out_haml + '/' + get_name(f) + '.html')
+            comp_haml(f, args.out_haml +  '/' + get_name(f) + '.html')
         if str(f).endswith('.scss'):
             comp_scss(f, args.out_scss + '/' + get_name(f) + '.css')
         if str(f).endswith('.coffee'):
