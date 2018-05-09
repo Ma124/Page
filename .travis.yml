@@ -14,13 +14,5 @@ after_success:
   - cd out
   - git init
   - git add .
-  - git commit -a -m "#$TRAVIS_BUILD_NUMBER Tested '$TRAVIS_COMMIT_MESSAGE' (OS=$TRAVIS_OS_NAME)"
-  - git push -f -q https://Ma124:$GITHUB_API_KEY@github.com/Ma124/ma124.github.io master
-
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GITHUB_TOKEN
-#  repo: Ma124/ma124.github.io
-#  on:
-#    branch: master
+  - git commit -a -m "#$TRAVIS_BUILD_NUMBER Commit Message '$TRAVIS_COMMIT_MESSAGE' (OS=$TRAVIS_OS_NAME)"
+  - git push -f -q https://Ma124:$GITHUB_API_KEY@github.com/Ma124/ma124.github.io master &2>/dev/null
