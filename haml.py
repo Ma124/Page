@@ -60,7 +60,7 @@ def comp(inp, out, cfgf):
                 html = sub(xml_regex(k), cfg['aliases'][k], html)
 
     html = sub(xml_regex('include'), include_match, html)
-    html = str(html).replace('\n', '').replace('\r', '')
+    html = str(html).replace('\r', '')
 
     f = open(out, 'w')
     f.write(html)
