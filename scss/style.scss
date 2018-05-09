@@ -1,0 +1,66 @@
+$yellow: #f1fa8c;
+$blue: #8be9fd;
+$bg: #282a36;
+$fg: #f8f8f2;
+$fsize: 13pt;
+
+body {
+  background-color: $bg;
+  color: $fg;
+  font-family: 'Courier New', monospace;
+  font-size: $fsize;
+}
+
+a {
+  color: $fg;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken($fg, 20%);
+  text-decoration: none;
+}
+
+.xml {
+  .tag {
+    color: $yellow;
+  }
+
+  .string {
+    color: $yellow;
+  }
+}
+
+.md {
+  .heading {
+    color: $blue;
+  }
+
+  .list-item-bullet {
+    color: $yellow;
+  }
+}
+
+.ascii-doc {
+  .lnk-txt {
+    color: $yellow;
+  }
+
+  .lnk-url {
+    color: $blue;
+  }
+}
+
+.sh-cmd {
+  border-bottom: 0.5em;
+}
+
+.ragged-right {
+  float: right;
+}
+
+input {
+  @extend body;
+  border: none;
+  padding: 0;
+}
