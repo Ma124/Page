@@ -1,3 +1,3 @@
 #!/bin/bash
 
-py build.py --src-haml=haml --src-coffee=coffee --src-scss=scss --out-all=out "$@"
+python build.py --src-haml=haml --src-coffee=coffee --src-scss=scss --out-all=out "$@"
