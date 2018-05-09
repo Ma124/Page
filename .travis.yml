@@ -1,10 +1,16 @@
 language: generic
 install: true
 script: ./build.sh -a
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  repo: Ma124/ma124.github.io
-  on:
-    branch: master
+after_success:
+  - mkdir out
+  - ./build
+  - cd out
+  - ls
+
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $GITHUB_TOKEN
+#  repo: Ma124/ma124.github.io
+#  on:
+#    branch: master
