@@ -2,7 +2,7 @@ language: python
 python:
   - "3.6"
 install:
-  - npm install --save-dev coffeescript
+  - npm install --global coffeescript
   - gem install haml
   - gem install sass
   - pip install configparser
