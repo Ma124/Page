@@ -4,6 +4,8 @@ python:
 install:
   - npm install --save-dev coffeescript
   - npm install --save-dev scss
+  - ls
+  - ls node_modules
   - gem install haml
   - pip install configparser
   - chmod u=rwx build.sh
