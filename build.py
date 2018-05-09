@@ -13,15 +13,15 @@ def call(l):
 
 
 def comp_scss(inp, out):
-    call([r'scss', inp, out])
+    call([r'D:\Programs\Ruby24-x64\bin\scss.bat', inp, out])
 
 
 def comp_coffee(inp, out):
-    call([r'coffee', '-o', out, inp])
+    call([r'C:\Users\Ma_12\AppData\Roaming\npm\coffee.cmd', '-o', out, inp])
 
 
 def comp_haml(inp, out):
-    call([r'python', 'haml.py', '-i', args.src_haml + ';' + args.out_haml, inp, out])
+    call([r'python', 'D:\Data\Programming\Web\Page\haml.py', '-i', args.src_haml + ';' + args.out_haml, inp, out])
 
 
 def get_name(p):
