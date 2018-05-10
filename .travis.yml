@@ -11,8 +11,8 @@ install:
 script:
   - ./build.sh -a
 after_success:
+  - mv res/* out
   - cd out
-  - echo ma124.js.org>CNAME
   - git init
   - git add .
   - git commit -a -m "#$TRAVIS_BUILD_NUMBER Commit Message '$TRAVIS_COMMIT_MESSAGE' (OS=$TRAVIS_OS_NAME)"
