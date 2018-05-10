@@ -68,6 +68,11 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
+.invlnk {
+  color: $fg;
+  text-decoration: none;
+}
+
 @keyframes cursor-animation {
   50% {
     visibility: hidden;
