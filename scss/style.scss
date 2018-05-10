@@ -68,9 +68,8 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
-.invlnk {
-  color: $fg;
-  text-decoration: none;
+.invlnk:hover {
+  @extend body
 }
 
 @keyframes cursor-animation {
